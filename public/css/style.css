@@ -1,0 +1,64 @@
+.carousel-img{
+    max-height: 100vh;
+}
+
+.carousel-caption{
+    border-top: 10px solid #ff0d01;
+    background-color: #0000009e;
+}
+.vh-50{
+    height: 50vh;
+}
+.primary{
+    color: #ff0d01;
+}
+.active{
+    color: #ff0d01 !important;
+}
+
+.title-container{
+    position: relative;
+    padding-bottom: 20px;
+}
+.title-container h2::after{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color:#ff0d01;
+    bottom: 0;
+    left: calc(50% - 2%);
+}
+
+.about-us-title{
+    font: 1.8em sans-serif;
+}
+.about-us-subtitle{
+    font: 1.2em sans-serif;
+}
+
+.card-icon{
+    transition: 0.5s;
+}
+.card-icon:hover{
+    color: #ff0d01;
+}
+.masonry-sizer,
+.masonry-item{
+    width: 30%;
+}
+
+@media (max-width: 768px){
+    .masonry-sizer,
+    .masonry-item{
+    width: 40%;
+}
+}
+
+@media (max-width: 576px){
+    .masonry-sizer,
+    .masonry-item{
+    width: 100%;
+}
+}
